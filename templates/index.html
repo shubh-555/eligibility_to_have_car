@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR OWNERSHIP PREDICTION</title>
+    <style>
+        body {
+        background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*Tk78nX9nhfZx58Uu");
+        background-repeat:no-repeat;
+        background-size:cover;
+        color: white;
+        
+
+        }
+    </style>    
+</head>
+<body style="font-size: x-large;">
+<center>
+    <h1>CAR OWNERSHIP PREDICTION</h1>
+</center>
+<form action="/get_data" method="post">
+    <center>
+
+        <label>Monthly Income:</label><input type="number" step = '0.001' name = "html_Monthly_Income"><br><br>
+
+        <label>Credit Score:</label><input type="number" step = '0.001' name = "html_Credit_Score"><br><br>
+
+        <label>Years of Employment(1yrs-20yrs):</label><input type="number" step = '0.001' name = "html_Years_of_Employment"><br><br>
+
+        <label>Finance Status:</label>
+        <select name="html_Finance_Status">
+            <option value="Stable">Stable</option>
+            <option value="Unstable">Unstable</option>
+            <option value="Fair">Fair</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Poor">Poor</option>
+            <option value="Unknown">Unknown</option>
+
+        </select><br><br>
+
+        <label>Number of Children:</label><input type="number" step = '0.001' name = "html_Number_of_Children"><br><br>
+
+    
+
+        <label>Occupation:</label>
+        <select name="html_Occupation">
+            <option value= 'Account Executive'>Account Executive</option>
+            <option value= 'Account Manager'>Account Manager</option>
+            <option value='Accountant'>Accountant</option>
+            <option value='Architect'>Architect</option>
+            <option value='Art Director'>Art Director</option>
+            <option value='Attorney'>Attorney</option>
+            <option value='Automotive Mechanic'>Automotive Mechanic</option>
+            <option value='Bank Teller'>Bank Teller</option>
+            <option value='Barista'>Barista</option>
+            <option value='Bartender'>Bartender</option>
+            <option value='Business Analyst'>Business Analyst</option>
+            <option value='Business Owner'>Business Owner</option>
+            <option value='Businessman'>Businessman</option>
+            <option value='Carpenter'>Carpenter</option>
+            <option value='Chef'>Chef</option>
+            <option value='Civil Engineer'>Civil Engineer</option>
+            <option value='Computer Programmer'>Computer Programmer</option>
+            <option value='Computer Technician'>Computer Technician</option>
+            <option value='Construction Worker'>Construction Worker</option>
+            <option value='Copywriter'>Copywriter</option>
+            <option value='Customer Service'>Customer Service</option>
+            <option value='Customer Service Rep'>Customer Service Rep</option>
+            <option value='Customer Support'>Customer Support</option>
+            <option value='Data Analyst'>Data Analyst</option>
+            <option value='Data Scientist'>Data Scientist</option>
+            <option value='Dental Assistant'>Dental Assistant</option>
+            <option value='Dental Hygienist'>Dental Hygienist</option>
+            <option value='Dentist'>Dentist</option>
+            <option value='Designer'>Designer</option>
+            <option value='Doctor'>Doctor</option>
+            <option value='Electrical Engineer'>Electrical Engineer</option>
+            <option value='Electrician'>Electrician</option>
+            <option value='Elementary School Teacher'>Elementary School Teacher</option>
+            <option value='Engineer'>Engineer</option>
+            <option value='Entrepreneur'>Entrepreneur</option>
+            <option value='Event Planner'>Event Planner</option>
+            <option value='Executive Assistant'>Executive Assistant</option>
+            <option value='Fashion Designer'>Fashion Designer</option>
+            <option value='Financial Advisor'>Financial Advisor</option>
+            <option value='Financial Analyst'>Financial Analyst</option>
+            <option value='Financial Manager'>Financial Manager</option>
+            <option value='Financial Planner'>Financial Planner</option>
+            <option value='Fitness Instructor'>Fitness Instructor</option>
+            <option value='Flight Attendant'>Flight Attendant</option>
+            <option value='Graphic Artist'>Graphic Artist</option>
+            <option value='Graphic Design'>Graphic Design</option>
+            <option value='Graphic Designer'>Graphic Designer</option>
+            <option value='HR Generalist'>HR Generalist</option>
+            <option value='HR Manager'>HR Manager</option>
+            <option value='HR Specialist'>HR Specialist</option>
+            <option value='Hair Stylist'>Hair Stylist</option>
+            <option value='Hairdresser'>Hairdresser</option>
+            <option value='Human Resources'>Human Resources</option>
+            <option value='Human Resources Manager'>Human Resources Manager</option>
+            <option value='IT Consultant'>IT Consultant</option>
+            <option value='IT Manager'>IT Manager</option>
+            <option value='IT Support Specialist'>IT Support Specialist</option>
+            <option value='Insurance Agent'>Insurance Agent</option>
+            <option value='Insurance Underwriter'>Insurance Underwriter</option>
+            <option value='Interior Designer'>Interior Designer</option>
+            <option value='Investment Banker'>Investment Banker</option>
+            <option value='Lawyer'>Lawyer</option>
+            <option value='Librarian'>Librarian</option>
+            <option value='Management Consultant'>Management Consultant</option>
+            <option value='Marketing'>Marketing</option>
+            <option value='Marketing Analyst'>Marketing Analyst</option>
+            <option value='Marketing Coordinator'>Marketing Coordinator</option>
+            <option value='Marketing Exec'>Marketing Exec</option>
+            <option value='Marketing Manager'>Marketing Manager</option>
+            <option value='Marketing Specialist'>Marketing Specialist</option>
+            <option value='Mechanic'>Mechanic</option>
+            <option value='Mechanical Designer'>Mechanical Designer</option>
+            <option value='Mechanical Engineer'>Mechanical Engineer</option>
+            <option value='Mechanical Technician'>Mechanical Technician</option>
+            <option value='Medical Assistant'>Medical Assistant</option>
+            <option value='Musician'>Musician</option>
+            <option value='Nurse'>Nurse</option>
+            <option value='Nurse Practitioner'>Nurse Practitioner</option>
+            <option value='Office Manager'>Office Manager</option>
+            <option value='Optometrist'>Optometrist</option>
+            <option value='Personal Trainer'>Personal Trainer</option>
+            <option value='Pharmacist'>Pharmacist</option>
+            <option value='Photographer'>Photographer</option>
+            <option value='Physical Education Teacher'>Physical Education Teacher</option>
+            <option value='Physical Therapist'>Physical Therapist</option>
+            <option value='Physical Therapist Assistant'>Physical Therapist Assistant</option>
+            <option value='Physical Trainer'>Physical Trainer</option>
+            <option value='Physician'>Physician</option>
+            <option value='Physician Assistant'>Physician Assistant</option>
+            <option value='Pilot'>Pilot</option>
+            <option value='Plumber'>Plumber</option>
+            <option value='Police Officer'>Police Officer</option>
+            <option value='Project Manager'>Project Manager</option>
+            <option value='Psychologist'>Psychologist</option>
+            <option value='Public Relations'>Public Relations</option>
+            <option value='Real Estate Ag'>Real Estate Ag</option>
+            <option value='Real Estate Agent'>Real Estate Agent</option>
+            <option value='Registered Nurse'>Registered Nurse</option>
+            <option value='Retail Manager'>Retail Manager</option>
+            <option value='Retail Salesperson'>Retail Salesperson</option>
+            <option value='Sales Manager'>Sales Manager</option>
+            <option value='Sales Representative'>Sales Representative</option>
+            <option value='Salesperson'>Salesperson</option>
+            <option value='Social Media Manager'>Social Media Manager</option>
+            <option value='Social Worker'>Social Worker</option>
+            <option value='Software Architect'>Software Architect</option>
+            <option value='Software Dev'>Software Dev</option>
+            <option value='Software Developer'>Software Developer</option>
+            <option value='Software Engineer'>Software Engineer</option>
+            <option value='Teacher'>Teacher</option>
+            <option value='Veterinarian'>Veterinarian</option>
+            <option value='Veterinarian Technician'>Veterinarian Technician</option>
+            <option value='Waiter/Waitress'>Waiter/Waitress</option>
+            <option value='Web Designer'>Web Designer</option>
+            <option value='Web Developer'>Web Developer</option>
+            <option value='Writer'>Writer</option>
+            
+        </select><br><br>
+
+        <label>Finance History:</label>
+        <select name="html_Finance_History">
+
+
+
+            <option value='Excellent'>Excellent</option>
+            <option value='Poor'>Poor</option>
+            <option value='Good'>Good</option>
+            <option value='Fair'>Fair</option>
+
+
+        </select> <br><br>
+
+        <input type="submit" value="CAR OWNERSHIP PREDICTION">
+
+    </form><br><br>
+
+    <label for="CAR OWNERSHIP : "></label>{{prediction}}
+
+    </center>
+
+
+
+    
+</body>
+</html>
